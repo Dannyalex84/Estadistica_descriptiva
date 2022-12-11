@@ -1,0 +1,107 @@
+Estadística descriptiva vs. inferencial
+Es importante entender la diferencia entre las dos principales ramas de la estadística en el area de las matemáticas:
+
+Estadística descriptiva: Se trata de resumir información de manera cuantitativa para entender de forma sencilla y concreta sobre algún determinado asunto
+Estadística inferencia: Se basa en realizar inferencias, deducir que podría pasar en el futuro en base a lo datos que tenemos acceso en la actualidad
+¿Puede mentir la estadística?
+
+La estadística descriptiva tiene un problema al momento de definir que métrica es la que nos va a brindar la mayor relevancia para nuestro estudio.
+
+El resultado podría estar sesgado a nuestro criterio personal, mostrando mayor interés a un cierto parámetro. dejando de lado a otro que también podría ser relevante. Mostramos solo una cara de la moneda.
+No existen definiciones objetivas en estadística, sin embargo sobre estas definiciones podemos realizar cálculos exactos lo cual es un problema
+Los diferentes estadísticos descriptivos dan nociones diferentes sobre los mismos datos.
+¿Por que aprender estadística?
+
+A pesar de los problemas que pueda presentar es muy importante entender que la estadística nos puede ayudar a:
+
+Resumir grandes cantidades de información
+tomar mejores decisiones
+responder preguntas con relevancia social
+reconocer patrones en los datos
+descubrir a quien usan estas herramientas con fines nefastos
+
+
+Estadistica descriptiva: Se encarga de resumir, describir la situación actual de un evento a través de los datos. nos dan nociones mas claras o difretentes a cerca de un evento; si pudiera explicarlo con una analogia es como estar en lo alto de una montaña e intentar ver un paisaje a lo lejos (datos) pero solo vez con escaso detalle, formas o siluetas, entonces te pones unos binoculares (usas la estadistica descriptiva) y ya puedes ver con mas claridad q hay arbolitos, un arrollo, a lo mejor q hay personas o tal vez unas casas un lado etc.
+
+Estádistica inferencial: Esta asociada a deducir, predecir, o hacer inferencia a tráves de los datos; con la misma analogia de los binoculares la estadistica inferencia vendria siendo como una bola de cristal q te permite ver un posible futuro (como la de uranai baba de dragon ball xD); tal vez no a predecir con exactitud que va a pasar pero si nos da certidumbre estadistica a cerca de eventos.
+
+
+¿Qué es la estadística descriptiva vs. inferencial?
+
+Son las dos principales ramas de la estadística
+
+La descriptiva busca resumir información histórica.
+La inferencial busca inferir una predicción.
+
+En la estadística descriptiva:
+
+Permite “mentir”, ya que no hay una definición objetiva
+
+Dependerá de qué “lado de la moneda” se muestre
+
+Se puede llegar a distintas conclusiones dependiendo del peso que se le dé a cada variable
+
+Los estadísticos descriptivos dan nociones diferentes sobre los mismos datos
+
+LEER NAKED STATISTICS
+
+¿Por qué aprender estadística?
+
+Resumir grandes cantidades de información
+Tomar mejores decisiones
+Responder preguntas con relevancia social
+Reconocer patrones en los datos
+Descubrir a quienes usan estas herramientas con fines nefastos
+
+
+La estadística descriptiva tiene como objetivo resumir la información contenida en los datos de la forma más sencilla y presentable posible, obteniendo así los parámetros que distinguen las características de un conjunto de datos (lo que se conoce como estadísticos). Pertenecen al ámbito de la estadística descriptiva las tablas de frecuencias, a partir de las cuales se obtienen los estadísticos:
+
+Medidas de centralización: la media en todas sus variantes (aritmética, geométrica, ponderada), la moda y la mediana
+Medidas de dispersión: la varianza, la desviación típica (raíz cuadrada de la varianza) y el rango
+Medidas de tendencia central: los cuantiles y sus desgloses (percentiles, cuartiles, deciles, etc.)
+Medidas de forma: los coeficientes de asimetría y curtosis
+Medidas de concentración: el coeficiente Gini, a partir del cual se obtiene la curva de Lorenz
+Etc. etc. etc.
+
+¿Qué es lo que distingue a la estadística descriptiva de la inferencial?
+
+En primer lugar, la naturaleza de los datos. Mientras que la estadística descriptiva sirve tanto para una población como para una muestra (un subconjunto de esa población cuyos elementos son elegidos al azar), la estadística inferencial trabaja con muestras a partir de las cuales intenta extraer conclusiones sobre la población.
+
+Esta práctica se conoce como inferir, y es importante recalcar la diferencia en la naturaleza de los datos, ya que es un error muy común el de extraer conclusiones de un conjunto cuyas conclusiones… son los mismos datos en sí.
+
+Para explicar dicho error, conviene asimismo explicar la principal diferencia teórica entre estadística descriptiva e inferencial. La descriptiva, al ser únicamente una descripción de los datos, no asume que éstos tengan alguna propiedad más allá de las que se pueden describir con los estadísticos ya mencionados. En cambio, la inferencial asume que los datos se rigen bajo un fenómeno aleatorio subyacente que es el que hace que tomen un valor u otro. Es por esto por lo que los datos pasarían a denominarse variables aleatorias. Al existir incertidumbre, se puede igualmente describir la población de la que sale esa muestra, pero debemos entonces asumir un cierto error derivado de la naturaleza probabilística de los datos.
+
+
+¿Qué es la estadística descriptiva?
+
+La estadística descriptiva, también conocida como «muestras» puede determinar múltiples observaciones que se realizan a lo largo de la investigación. Se define como la búsqueda de miembros de grupos que se ajusten a los parámetros de tu investigación, la anotación de datos sobre los grupos que estás probando y la aplicación de estadísticas y gráficos para concluir las conclusiones de este grupo. En otras palabras, se trata de reducir los resultados de este grupo a unos pocos puntos clave.
+
+En este caso, usted’ sólo trata de probar los resultados que puede obtener de los individuos relevantes. Esto le obliga a seguir probando si sus resultados afectan a una parte mayor de la población.
+
+Algunas conclusiones para las que se puede medir son:
+
+Tendencia central: El proceso de utilizar la media y la mediana para determinar la ubicación de los puntos de datos en un gráfico.
+
+Dispersión: La dispersión es otra forma de identificar la separación de los puntos de datos del centro de tu gráfico. Un número pequeño significa que la dispersión está más cerca del centro, mientras que un número mayor implica una mayor separación del epicentro del gráfico.
+
+Asimetría: La asimetría destaca la separación de los puntos de datos que has medido entre sí. Puede concluir si son simétricos o sesgados a partir de sus mediciones.
+
+**** ¿Qué es la estadística inferencial?****
+
+La estadística inferencial es cuando se toman datos de un grupo de muestra y se hace una predicción que repercute en la conclusión sobre una población grande. Puedes utilizar el muestreo aleatorio para evaluar cómo las diferentes variables pueden llevarte a hacer generalizaciones para realizar más experimentos. Para obtener un análisis preciso, tendrá que identificar la población que está midiendo, crear una muestra para esa población e incorporar el análisis para encontrar un error de muestreo.
+
+
+Estadística
+Podemos enteder la estadística como el estudio y la práctica de recolectar información y describirla de una manera que resulte útil. Por supuesto, esta utilidad depende de la finalidad con que nosotros estamos realizando nuestros estudios: qué preguntas queremos responder. 🤔
+.
+
+Estadística descriptiva
+Si tenemos un conjunto de datos, recolectado de una muestra, la estadística descriptiva se enfoca en describir este conjunto de datos de forma sintetizada (unos cuantos números) pero aún útil para nuestros fines. Tenemos medidas de tendencia central y medidas de dispersión para describir nuestro data set. 📊
+.
+
+Estadística inferencial
+Dado un conjunto de datos extraído del estudio de una muestra, la estadística inferencial se enfoca en tratar de extraer conclusiones que sean validas para una población más grande que con la que se pudo interactuar.
+.
+Nosotros no podemos hacer un estudio sobre los efectos secundarios de un medicamento, que involucre a todas las personas en la tierra. Aquí la estadística inferencial nos ayudaría a tratar de obtener conclusiones validas para todas las personas en la tierra, aún cuando sólo una fracción de este total haya tenido contacto con el medicamento. 📈
+
+
