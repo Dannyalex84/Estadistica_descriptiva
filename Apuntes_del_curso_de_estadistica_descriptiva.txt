@@ -105,3 +105,63 @@ Dado un conjunto de datos extraído del estudio de una muestra, la estadística 
 Nosotros no podemos hacer un estudio sobre los efectos secundarios de un medicamento, que involucre a todas las personas en la tierra. Aquí la estadística inferencial nos ayudaría a tratar de obtener conclusiones validas para todas las personas en la tierra, aún cuando sólo una fracción de este total haya tenido contacto con el medicamento. 📈
 
 
+Mentiras, malditas mentiras y estadísticas
+El arte de mentir
+El mundo que nos rodea es cada vez más complejo. Nos estamos concentrando en la creciente complejidad matemática de nuestra sociedad en sus diversas facetas. Queremos crear una nueva conciencia contra el mal uso cotidiano de las matemáticas proporcionando varios ejemplos prototípicos de usos falsos y engañosos de los métodos matemáticos. Esperamos que se vuelva más escéptico después de haber leído los diversos ejemplos, que cubren casi todas las áreas de nuestra sociedad. Podrás diferenciar entre el bien del mal y los hechos de las mentiras.
+
+Mentir con estadísticas es fácil, de hecho, puede ser realizado fácilmente por aficionados a las matemáticas. Nadie discutiría seriamente que hay personas que no pueden ver nada. También hay personas daltónicas, que ven el mundo desde otra perspectiva. Muchos de ellos no pueden ver, por ejemplo, cerezas en un cerezo. Pero casi nadie sabe acerca de la ceguera matemática. La ceguera numérica puede llegar a ser innumerable.
+
+Si bien el analfabetismo se discute públicamente con mucha frecuencia, casi nadie habla de la falta de aritmética. Al menos el idioma inglés tiene una palabra para aquellos que carecen de conocimiento y comprensión de conceptos y métodos matemáticos. No hay una palabra para “innumerado” ni para “innumeración” en el idioma alemán. Si un concepto no es generalmente conocido o no se tiene en cuenta, es posible que no haya una palabra para describirlo. P.ej. no existe una palabra para nieve en algunos idiomas africanos, mientras que los esquimales tienen diferentes palabras para varios tipos de nieve. Pero te equivocas si crees que el aritmética está ausente en Alemania como no hay nieve en muchas zonas de África. La ignorancia matemática está tan extendida en Alemania como en otros países llamados civilizados. El principal problema radica en el hecho de que muchos adultos “educados” son funcionalmente innumerables. Esto significa, en muchos casos, que no son capaces de manejar conceptos como presentaciones gráficas de datos, estimación de riesgos y carecen de la lógica para el análisis estadístico.
+
+La principal diferencia con ser analfabeto es que la mayoría de las personas ni siquiera se dan cuenta de que les afecta. Es una enfermedad de la que ni siquiera los matemáticos están completamente libres.
+
+Desafortunadamente, puede usarse como un libro de texto para aquellos que quieren comenzar a hacer trampa por su cuenta.
+
+
+¿En que partes del flujo de trabajo se necesita de estadística?
+.
+Todos las partes del flujo requiere del conocimiento en ciertas ramas de la estadística. La estadística descriptiva se va a emplear más en los dos primeros bloques de trabajo.
+
+.
+
+Ingesta de datos y Validación : Se encarga de todo el procesamiento de ETL (Extract Transform Load) obtener los datos, limpiarlos y estructurarlos, crear pipelines de análisis automatizado, es decir que transformaciones vamos a realizar a los datos para que estén listos para el caso especifico de estudio que vamos a realizar.
+
+Preparación y entrenamiento del modelo: En este bloque se va a realizar un análisis exploratorio de los datos con estadística descriptiva, entender correlaciones y realizar posibles reducciones de datos.
+
+Evaluar el modelo, Producción e Interacción: esta parte del flujo se basa mas en la estadística inferencial.
+
+El flujo de trabajo en Data Science tiene 8 pasos:
+
+Data ingestion.
+Data visualization.
+Data preparation.
+Model training .
+Model evaluation.
+Model validation.
+Model serving.
+En user interface.
+En algunos de estos se puede aplicar la estadística, por ejemplo, en los primeros cuatro la estadística descriptiva juega un rol importante.
+
+El flujo suele estar compuesto por el pipeline OSEMN, es decir:
+
+O => Obtaining data
+S => Scrubbing / Cleaning data
+E => Exploring / Visualizing data
+M => Modeling data
+N => Interpreting data
+Los roles son:
+
+Ingeniero de datos
+Analista de datos
+Científico de datos genérico
+Ingeniero de Machine Learning
+Científico investigador
+Todos los roles necesitan saber estadística en las fases que les corresponde desarrollar en el flujo.
+.
+Se puede dividir el flujo de trabajo en 3 bloques:
+• Ingesta de datos y Validación :
+Se encarga de todo el procesamiento de ETL (Extract Transform Load). Ahi vamos a obtener los datos, limpiarlos y estructurarlos, crear pipelines para definir que transformaciones vamos a realizar a los datos para que estén listos para el caso específico de estudio que vamos a realizar.
+• Preparación y entrenamiento del modelo:
+En este bloque se toma los datos preparados y se construye el modelo. Aqui se va a realizar un análisis exploratorio de los datos con estadística descriptiva, entender correlaciones y realizar posibles reducciones de datos.
+• Evaluar el modelo, Producción e Interacción:
+esta parte del flujo se basa más en la estadística inferencial.
