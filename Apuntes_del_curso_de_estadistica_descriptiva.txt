@@ -211,3 +211,193 @@ X → Variable sobre la que se pretenden calcular la varianza
 El coeficiente de variación de utiliza para comparar la dispersión (variación) de conjuntos de datos de medidas diferentes o con medias aritméticas diferentes.
 
 
+$$ \sqrt {\frac{1}{N}\sum\limits_{i = 1}^N {\left( {x_i - \bar x} \right)^2 } } $$
+
+
+Asimetría en distribuciones
+Como vimos en la clase, el hecho de que nuestra distribución tenga una tendencia a la derecha o a izquierda nos representa un problema, ya que no a acorde con una distribución y eso puede afectar a nuestros análisis si no tomamos en cuenta ese sesgo. No siempre hay que confiar en nuestra intuición o lo que vemos a simple vista, hay métodos como:
+
+Primer coeficiente de asimetría de Pearson (asimetría de modo)
+Segundo coeficiente de asimetría de Pearson (asimetría mediana)
+Coeficiente de Groeneveld y Meeden
+Coeficiente de Fisher
+Por mencionar algunos.
+.
+
+Y por último, no hay que olvidar la curtosis:
+Una curtosis grande implica una mayor concentración de valores de la variable tanto muy cerca de la media de la distribución (pico) como muy lejos de ella (colas), al tiempo que existe una relativamente menor frecuencia de valores intermedios. Esto explica una forma de la distribución de frecuencias/probabilidad con colas más gruesas, con un centro más apuntado y una menor proporción de valores intermedios entre el pico y colas.
+Una mayor curtosis no implica una mayor varianza, ni viceversa.
+
+Normalización
+La normalización es una técnica que a menudo se aplica como parte de la preparación de datos para el aprendizaje automático. El objetivo de la normalización es cambiar los valores de las columnas numéricas en el conjunto de datos para usar una escala común, sin distorsionar las diferencias en los rangos de valores ni perder información. La normalización también es necesaria para que algunos algoritmos modelen los datos correctamente.
+.
+Por ejemplo, suponga que su conjunto de datos de entrada contiene una columna con valores que van de 0 a 1 y otra columna con valores que van de 10,000 a 100,000. La gran diferencia en la escala de los números podría causar problemas al intentar combinar los valores como características durante el modelado.
+.
+La normalización evita estos problemas al crear nuevos valores que mantienen la distribución general y las proporciones en los datos de origen, mientras mantienen los valores dentro de una escala aplicada en todas las columnas numéricas utilizadas en el modelo.
+.
+
+Tenemos varias opciones para transformar datos numéricos:
+Cambiar todos los valores a una escala de 0 a 1 o transformar los valores representándolos como rangos de percentiles en lugar de valores absolutos.
+Aplicar la normalización a una sola columna o a varias columnas en el mismo conjunto de datos.
+Si necesita repetir el experimento o aplicar los mismos pasos de normalización a otros datos, puede guardar los pasos como una transformación de normalización y aplicarlos a otros conjuntos de datos que tengan el mismo esquema.
+Nota importante: Algunos algoritmos requieren que los datos se normalicen antes de entrenar un modelo. Otros algoritmos realizan su propia normalización o escalado de datos.
+
+Normalización lineal
+Algunos de los tipos:
+
+Zscore : convierte todos los valores en una puntuación z. Los valores de la columna se transforman mediante la siguiente fórmula:
+z score
+La media y la desviación estándar se calculan para cada columna por separado. Se utiliza la desviación estándar de la población.
+
+
+MinMax : el normalizador min-max cambia la escala linealmente cada característica al intervalo [0,1]. El cambio de escala al intervalo [0,1] se realiza cambiando los valores de cada característica para que el valor mínimo sea 0, y luego dividiendo por el nuevo valor máximo (que es la diferencia entre los valores máximo y mínimo originales). Los valores de la columna se transforman mediante la siguiente fórmula:
+min max
+
+
+¿Cuándo usar la normalización lineal?
+En datos simétricos o en datos uniformemente distribuidos.
+
+Escalamiento lineal
+
+Técnica para normalizar los datos usando una escala común en las variables de interés antes de modelar o desarrollar un aprendizaje automático. Transforma el valor de cada dato para un rango determinado. Normalmente [-1,1]
+
+Min-Max: Transforma cada dato (X) a un valor normalizado ($X_s$) usando el valor mínimo y máximo de cada variable
+$$ X_s = (2X-min-max)/(max-min) $$
+
+Clipping: Corta la distribución de los datos entre dos valores limite. El valor de cada dato fuera de los limites colapsa al valor del limite mas cercano.
+
+Winzoriding: Usando percentiles específicos de limites.
+Z-Score: Se determina usando medidas de tendencia central y de dispersión.
+
+$$ X_s = ( X - Promedio) / Desv. Stand $$
+
+Resumen de clase:
+Todo lo anterior visto sirve para identificar el uso de estadística descriptiva en el análisis de exploración de datos.
+El análisis exploratorio de datos no se reduce a la visto en estadística descriptiva.
+En esta sección se enfoca en el uso de estadística descriptiva para el procesamiento de datos pre modelo predictivo.
+.
+Escalamiento o normalización lineal
+¿Qué es?
+La normalización es una técnica que a menudo se aplica como parte de la preparación de datos para el aprendizaje automático.
+¿En qué consiste?
+En cambiar los valores de las columnas numéricas en el conjunto de datos para usar una escala común, sin distorsionar las diferencias en los rangos de valores ni perder información.
+¿Por qué usarlos?
+Los modelos de machine Learning son eficientes en el rango [-1,1]. Si los datos no se encuentran en ese rango debes transformarlos mediante el escalamiento o normalización para que los algoritmos modelen los datos correctamente.
+¿Cuándo usarlos?
+Data simétrica o uniformemente distribuida. Un ejemplo de ellos es la distribución Gaussiana.
+Usando el box-splot y el histograma podremos saber la distribución de la data.
+.
+Entre los tipos más importantes tenemos:
+
+Min-max
+Clipping
+Winsorizing
+Z-Score
+
+Z- Score en probabilidad se denomina Variable normal estandarizada. Se transforma la distribucion a una distribucion estandarizada y para cada valor de Z se encuentran tabulados los valores de la probabilidad (Estos valores salen de la integracion de la funcion de densidad de una distribucion normal y la suma del area bajo la curva).
+
+Pipelines de procesamiento para variables numéricas
+
+¿Qué es Pipelines de procesamiento para variables numéricas?
+La normalización es un proceso se utiliza pre machin learning para la preparación de los datos. El objetivo es cambiar las columnas numéricas del mismo rango en conjunto de datos con una escala común.
+
+Escalamiento lineal
+¿Por qué emplear?
+Modelos de machine Leaning efiencientes en el
+
+Rango estándar [ -1, 1 ]
+¿Hay diferentes tipos?
+max - min, Clipping, Z-score, Winsorizing, etc.
+¿Cuándo utilizarlos?
+Cuando los datos tienen una distribución parecida.
+O los datos son simétricos.
+
+¿Qué es una Pipeline de Datos?
+
+Una pipeline de datos es una construcción lógica que representa un proceso dividido en fases. Las pipelines de datos se caracterizan por definir el conjunto de pasos o fases y las tecnologías involucradas en un proceso de movimiento o procesamiento de datos.
+
+Las pipelines de datos son necesarias ya que no debemos analizar los datos en los mismos sistemas donde se crean. El proceso de analítica es costoso computacionalmente, por lo que se separa para evitar perjudicar el rendimiento del servicio. De esta forma, tenemos sistemas OLTP, encargados de capturar y crear datos, y sistemas OLAP, encargados de analizar los datos.
+
+Por ejemplo, un sistema OLTP puede ser un CRM, mientras que un sistema OLAP será un Data Warehouse.
+
+Ejemplo de Pipeline de Datos
+
+Como ejemplo, podemos pensar en las APIs de ingesta para obtener los datos. Esta API es el punto de partida, y podría enviar los datos a un topic de Apache Kafka. Kafka actúa aquí como un buffer para el siguiente paso.
+
+Después, una tecnología de procesamiento, que puede ser streaming o batch, leerá los datos de nuestro buffer. Por ejemplo, Apache Spark realizará analítica sobre estos datos.
+
+Por último, la pipeline termina con el resultado almacenado de forma persistente en una base de datos como HBase o en un sistema de ficheros distribuido como HDFS.
+
+Una vez que nuestros datos están persistidos se encuentran listos para ser usados. Podríamos implementar una aplicación web que muestra estos datos en un dashboard como Grafana o consultarlos con herramientas de visualización y BI.
+
+Los movimientos de datos entre estos sistemas forman pipelines de datos y son
+
+
+Transformación no lineal
+¿Por qué usarlos?
+En el caso donde haya datos fuertemente sesgados y no simétricos.
+.
+
+Algunos tipos:
+Logística: los valores de la columna se transforman mediante la siguiente fórmula:
+log
+.
+
+LogNormal: esta opción convierte todos los valores a una escala logarítmica normal. Los valores1 de la columna se transforman mediante la siguiente fórmula:
+lognormal
+Aquí μ y σ son los parámetros de la distribución, calculados empíricamente a partir de los datos como estimaciones de máxima verosimilitud, para cada columna por separado.
+
+.
+
+TanH: todos los valores se convierten a una tangente hiperbólica. Los valores de la columna se transforman mediante la siguiente fórmula:
+Tha
+.
+
+¿Cuándo usarlos?
+Justo antes de aplicar el escalamiento lineal, las transformaciones no lineales solo son para que nuestros datos queden lineales para luego aplicar la normalización lineal. Siempre se debe aplicar la normalización lineal.
+
+
+Logística: $$ x_s = \frac{1}{1+e^{-x}} $$
+Tan H: $$ p(k|x;\Theta) = \frac{[E(Y|x)]^k*e^{-E(Y|x)}}{k!} $$
+
+
+Correlaciones
+¿Qué es la correlación?
+La correlación es una medida estadística que expresa hasta qué punto dos variables están relacionadas linealmente (esto es, cambian conjuntamente a una tasa constante).
+¿Qué es la covarianza?
+Es un valor que indica el grado de variación conjunta de dos variables aleatorias respecto a sus medias.
+¿Qué es el coeficiente de correlación?
+El coeficiente de correlación es la medida específica que cuantifica la intensidad de la relación lineal entre dos variables en un análisis de correlación.
+
+Dato curioso:
+Lo que meciona Pacho al inicio de la clase, en econometría se le conoce como multicolinealidad que es una situación en la que se presenta una fuerte correlación entre variables del modelo.
+
+Hay 2 tipos de multicolinealidad:
+Multicolinealidad exacta: Hay colinealidad exacta, cuando una o más variables, son una combinación lineal de otra, es decir, existe un coeficiente de correlación entre estas dos variables de 1.
+
+Multicolinealidad aproximada: Hay colinealidad aproximada, cuando una o más variables, no son exactamente una combinación lineal de la otra, pero existe un coeficiente de determinación entre estas variables muy cercano al uno.
+
+
+Notas de la clase:
+La grafica splot nos permitía visualizar como cambiaba una variable respecto a la otra.
+Decimos que están correlacionadas si una varia de forma muy definida respecto a otra
+.
+¿Qué es correlación?
+La correlación es una medida estadística que expresa hasta qué punto dos variables están relacionadas linealmente (esto es, cambian conjuntamente a una tasa constante).
+.
+¿Por qué es importante la correlación?
+Si se tienen 2 variables que están correlacionadas entre sí, no tiene sentido incluir ambas variables en un modelo de ML porque probablemente las 2 van a aportar la misma información si la correlación es muy alta. En ese caso se elimina a una de las 2, básicamente en eso consiste la reducción de datos.
+.
+¿Qué es la covarianza?
+Es un valor que indica el grado de variación conjunta de dos variables aleatorias respecto a sus medias
+.
+¿Qué es el coeficiente de correlación?
+Es una medida de dependencia lineal entre 2 variables. A diferencia de la covarianza es independiente de la escala de medida de las variables.
+
+Si las variables tienen un coeficiente de correlación muy alto las variables tienen una correlación muy elevada.
+Si el coeficiente de correlación es muy bajo las variables tienen una correlación muy baja.
+.
+Frase:
+"Cum hoc ergo propter hoc"
+Causación no está asociado don correlación
+Correlación no implica causación
