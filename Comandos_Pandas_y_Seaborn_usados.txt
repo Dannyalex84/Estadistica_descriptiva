@@ -1,0 +1,15 @@
+Bonus: comandos de Pandas y Seaborn usados en el curso
+Código	▶ Función
+Pandas	
+pd.read_csv('ruta')	-> Lee el DataFrame y lo puedes almacenar en una variable {df}
+df.dtypes	-> Los tipos de todas las columnas
+df.describe()	-> Conjunto completo de estadísticos descriptivos (fundamentales)
+df.groupby('categoria').count()	-> Agrupa los datos por la variable categórica y los cuenta
+df['categoria'].mean()	-> Saca la media de todos los datos de esa categoría
+df['category'].plot.hist(bins=20)	-> Histograma de frecuencua con intervalos de valores (bins)
+---------------------------------	---------------------------------
+Seaborn	
+sns.scatterplot(data=dataset, x='x_column', y='y_column')	-> Grafica un scatterplot (diagrama de dispersión). Si añades hue='categoría', aparece en colores clasificados.
+sns.jointplot(data=dataset, x='x_column', y='y_column')	-> Grafica un scatterplot y sus distribuciones. Si añades hue='categoría', aparece en colores clasificados.
+sns.boxplot(data=iris, x='species', y='sepal_length')	-> Grafica los cuartiles.
+sns.barplot(data=iris, x='species', y='sepal_length')	-> Grafica un diagrama de barras.
